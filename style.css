@@ -1,0 +1,156 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  padding: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header   header"
+    "monthly-sub why";
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 62rem;
+  border-radius: .8rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0,0,0, .2);
+}
+
+.item {
+  padding: 3.2rem;
+}
+
+.header {
+  grid-area: header;
+  background-color: #FFF;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.header h2 {
+  margin-top: 1.6rem;
+  color: hsl(71, 73%, 54%);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.header p {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.6rem;
+  margin-top: .8rem;
+  line-height: 1.5;
+}
+
+.monthly-sub {
+  grid-area: monthly-sub;
+  background-color: hsl(179, 62%, 43%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 23rem;
+}
+
+.price {
+  color: #FFF;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.price span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.access {
+  color: #FFF;
+  font-size: 1.6rem;
+}
+
+.signup {
+  display: block;
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: .4rem;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0px 0px 20px rgba(0,0,0, .2);
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.signup:hover {
+  transform: translate(1px, -1px);
+}
+
+.signup:active {
+  transform: translate(-1px, 1px);
+}
+
+
+.why {
+  grid-area: why;
+  background-color: hsl(179,47%,52%);
+}
+
+.why ul {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.title-3 {
+  color: #FFF;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "monthly-sub"
+      "why";
+    grid-template-columns: 1fr;
+  }
+
+
+}
